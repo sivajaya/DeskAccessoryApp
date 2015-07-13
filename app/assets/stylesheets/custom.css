@@ -1,0 +1,15 @@
+.admin_login{
+    padding: 10px 28px ! important;
+}
+.form-login{
+    margin-top: 150px ! important;
+}
+.header{
+ min-height: 0px ! important; 
+}
+.logout{
+  margin-right: -12px ! important;
+}
+#main-content {
+  margin-left: 0px ! important;
+}

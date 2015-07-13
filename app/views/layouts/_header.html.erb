@@ -1,0 +1,28 @@
+<% if signed_in? %>
+<header class="header black-bg">
+    <a href="" class="logo"><b>Desk Accessory App</b></a>
+    <div class="nav notify-row" id="top_menu">
+        <ul class="nav top-menu">
+            <li>
+                <a href="">System</a>
+            </li>
+            <li>
+                <a href="">Monitor</a>
+            </li>
+            <li>
+                <a href="">Employee</a>
+            </li>
+            <li>
+                <a href="">Accessory</a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+            <li>
+            <%= link_to "logout", destroy_admin_session_path, :method => :delete, :class =>"logout"%>
+        </ul>
+    </div>
+</header>
+<% end %>
+

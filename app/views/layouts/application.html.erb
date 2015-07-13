@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>DeskAccessoryApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section id="container" >
+    <%= render 'layouts/header'%>
+    <section id="main-content">
+      <section class="wrapper">
+        <%= yield %>
+      </section>
+    </section>
+    <%= render 'layouts/footer' %>
+  </section>
+</body>
+</html>
