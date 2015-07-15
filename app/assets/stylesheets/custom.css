@@ -13,3 +13,21 @@
 #main-content {
   margin-left: 0px ! important;
 }
+.pn {
+  height: inherit ! important;
+}
+.label{
+  margin-left: 30px;
+}
+.btnnew{
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.mb {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+.btnback{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}

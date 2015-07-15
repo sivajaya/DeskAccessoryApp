@@ -1,29 +1,35 @@
 <p id="notice"><%= notice %></p>
+<div class="col-lg-6 col-md-4 col-sm-4 mb">
+  <div class="weather-2 pn">
+    <div class="weather-2-header">
+      <div class="row">
+        <div class="col-sm-6 col-xs-6">
+          <p> <%= @employee.name %> </p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <strong>Emp:</strong>
+      <%= @employee.emp_id %>
+    </p>
 
-<p>
-  <strong>Emp:</strong>
-  <%= @employee.emp_id %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @employee.email_id %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @employee.name %>
-</p>
+    <p>
+      <strong>Mobile no:</strong>
+      <%= @employee.mobile_no %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @employee.email_id %>
-</p>
+    <p>
+      <strong>Designation:</strong>
+      <%= @employee.designation %>
+    </p>
 
-<p>
-  <strong>Mobile no:</strong>
-  <%= @employee.mobile_no %>
-</p>
+    <%= link_to 'Edit', edit_employee_path(@employee), :class =>"btn btn-primary btnnew" %>
+    <%= link_to 'Back', employees_path, :class => "btn btn-info btnback"%>
 
-<p>
-  <strong>Designation:</strong>
-  <%= @employee.designation %>
-</p>
-
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+  </div>
+</div>

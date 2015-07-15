@@ -1,6 +1,15 @@
-<h1>Editing Employee</h1>
+<div class="col-lg-6 col-md-4 col-sm-4 mb">
+  <div class="weather-2 pn">
+    <div class="weather-2-header">
+      <div class="row">
+        <div class="col-sm-6 col-xs-6">
+          <p>Editing Employee</p>
+        </div>
+      </div>
+    </div>
+    <%= render 'form' %>
+    <%= link_to 'Show', @employee, :class =>"btn btn-success btnnew" %> 
+    <%= link_to 'Back', employees_path, :class =>"btn btn-info btnback" %>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @employee %> |
-<%= link_to 'Back', employees_path %>
