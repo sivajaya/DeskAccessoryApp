@@ -28,7 +28,7 @@ class MonitersController < ApplicationController
 
     respond_to do |format|
       if @moniter.save
-        format.html { redirect_to @moniter, notice: 'Moniter was successfully created.' }
+        format.html { redirect_to @moniter, notice: 'Monitor was successfully Saved.' }
         format.json { render :show, status: :created, location: @moniter }
       else
         format.html { render :new }

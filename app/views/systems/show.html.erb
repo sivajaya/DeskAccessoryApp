@@ -1,0 +1,27 @@
+<p id="notice" class="flash-message"><%= notice %></p>
+<div class="col-lg-6 col-md-4 col-sm-4 mb">
+  <div class="weather-2 pn">
+    <div class="weather-2-header">
+      <div class="row">
+        <div class="col-sm-6 col-xs-6">
+          <p style="font-size:16px"> System </p>
+        </div>
+      </div>
+    </div><br>
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Name </label>
+      <%= @system.name %>
+    </p><br>
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Size </label>
+      <%= @system.size %>
+    </p><br>
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">is_laptop </label>
+      <%= @system.is_laptop %>
+    </p><br>
+
+    <%= link_to 'Edit', edit_system_path(@system), :class =>"btn btn-primary btnnew" %>
+    <%= link_to 'Back', systems_path, :class => "btn btn-info btnback"%>
+  </div>
+</div>

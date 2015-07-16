@@ -3,13 +3,13 @@
     <div class="weather-2-header">
       <div class="row">
         <div class="col-sm-6 col-xs-6">
-          <p>NEW EMPLOYEE</p>
+          <p>Editing System</p>
         </div>
       </div>
     </div>
     <%= render 'form' %>
-    <%= link_to 'Cancel', new_employee_path, :class =>"btn btn-info btnnew" %>
-    <%= link_to 'List', employees_path, :class =>"btn btn-primary btnnew" %>
+    <%= link_to 'Show', @system, :class =>"btn btn-success btnnew" %> 
+    <%= link_to 'Back', systems_path, :class =>"btn btn-info btnback" %>
   </div>
 </div>
 

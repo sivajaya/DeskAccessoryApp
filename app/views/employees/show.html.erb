@@ -4,29 +4,29 @@
     <div class="weather-2-header">
       <div class="row">
         <div class="col-sm-6 col-xs-6">
-          <p> <%= @employee.name %> </p>
+          <p style="font-size:16px"> <%= @employee.name %> </p>
         </div>
       </div>
-    </div>
+    </div><br>
     <p>
-      <strong>Emp:</strong>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">EmpId </label>
       <%= @employee.emp_id %>
-    </p>
+    </p><br>
 
     <p>
-      <strong>Email:</strong>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Email</label>
       <%= @employee.email_id %>
-    </p>
+    </p><br>
 
     <p>
-      <strong>Mobile no:</strong>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Mobile No</label>
       <%= @employee.mobile_no %>
-    </p>
+    </p><br>
 
     <p>
-      <strong>Designation:</strong>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Designation</label>
       <%= @employee.designation %>
-    </p>
+    </p><br>
 
     <%= link_to 'Edit', edit_employee_path(@employee), :class =>"btn btn-primary btnnew" %>
     <%= link_to 'Back', employees_path, :class => "btn btn-info btnback"%>

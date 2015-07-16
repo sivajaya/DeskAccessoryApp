@@ -222,7 +222,8 @@ ul.top-menu > li > .logout {
 	padding: 5px 15px;
 	margin-right: 15px;
 	background: #68dff0;
-	margin-top: 15px;
+	margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -354,7 +355,7 @@ ul.sidebar-menu li a{
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
-    font-size: 12px;
+    font-size: 16px;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -2219,6 +2220,7 @@ label {
     background: #68dff0;
     color: #fff;
     padding: 10px 0;
+    margin-top: 123px;
 }
 
 

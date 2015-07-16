@@ -7,9 +7,6 @@
 .header{
  min-height: 0px ! important; 
 }
-.logout{
-  margin-right: -12px ! important;
-}
 #main-content {
   margin-left: 0px ! important;
 }
@@ -24,7 +21,7 @@
   margin-bottom: 10px;
 }
 .mb {
-  margin-left: 300px;
+  margin-left: 240px;
   margin-top: 40px;
 }
 .btnback{
@@ -33,4 +30,32 @@
 }
 .btnalign{
   float: left;
+}
+.tblalign{
+    margin-left: 330px;
+    margin-top: 20px;
+}
+.emplbl{
+  font-size: 16px;
+  font-family: fantasy;
+}
+.flash-message {
+  background-color: #A4E7A0;
+  color: black;
+  z-index: 999;
+  position: fixed;
+  font-weight: bold;
+  width: 96%;
+  margin: 20px;      
+}
+#notice{
+  width: 240px;
+  margin-left: 480px;
+}
+.tblsys{
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.lisidebar{
+  font-size: 16px ! important;
 }

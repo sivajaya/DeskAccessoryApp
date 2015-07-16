@@ -1,0 +1,34 @@
+<%= form_for(@system) do |f| %>
+  <% if @system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@system.errors.count, "error") %> prohibited this system from being saved:</h2>
+
+      <ul>
+      <% @system.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form-group">
+    <%= f.label :name , :class => "col-sm-2 col-sm-2 control-label"%>
+    <div class="col-sm-10">
+      <%= f.text_field :name, :class =>"form-control" %> <br>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :size, :class => "col-sm-2 col-sm-2 control-label"%>
+    <div class="col-sm-10">
+      <%= f.text_field :size, :class =>"form-control" %>  <br> 
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :is_laptop, :class => "col-sm-2 col-sm-2 control-label"%>
+    <div class="col-sm-10">
+      <%= f.check_box :is_laptop%>Yes<br>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Save', :class =>"btn btn-success btnnew btnalign" %>
+  </div>
+<% end %>
