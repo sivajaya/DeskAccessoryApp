@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<div class="col-lg-6 col-md-4 col-sm-4 mb">
+  <div class="weather-2 pn">
+    <div class="weather-2-header">
+      <div class="row">
+        <div class="col-sm-6 col-xs-6">
+          <p style="font-size:16px">Employee Accessary</p>
+        </div>
+      </div>
+    </div><br>
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Employee </label>
+       <%= @accessary.employee_id %>
+    </p><br>
+
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Moniter</label>
+      <%= @accessary.moniter_id %>
+    </p><br>
+
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">System</label>
+      <%= @accessary.system_id %>
+    </p><br>
+
+    <p>
+      <label class="col-sm-2 col-sm-2 control-label emplbl">Items</label>
+      <%= @accessary.items %>
+    </p><br>
+
+    <%= link_to 'Edit',  edit_accessary_path(@accessary), :class =>"btn btn-primary btnnew" %>
+    <%= link_to 'Back', accessaries_path, :class => "btn btn-info btnback"%>
+  </div>
+</div>

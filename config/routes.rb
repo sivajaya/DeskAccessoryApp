@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :accessaries
+  resources :peripherals
   resources :systems
   resources :moniters
   resources :employees
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'employees#index'
+   root 'accessaries#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
