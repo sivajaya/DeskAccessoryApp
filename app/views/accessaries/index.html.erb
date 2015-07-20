@@ -17,9 +17,9 @@
         <tbody>
           <% @accessaries.each do |accessary| %>
           <tr>
-            <td><%= accessary.employee_id %></td>
-            <td><%= accessary.moniter_id %></td>
-            <td><%= accessary.system_id %></td>
+            <td><%=Employee.find(accessary.employee_id).name %></td>
+            <td><%=Moniter.find(accessary.moniter_id).screen %></td>
+            <td><%=System.find(accessary.system_id).name %></td>
             <td><%= accessary.items %></td>
             <td><%= link_to '', edit_accessary_path(accessary), :class =>"btn btn-primary btn-xs fa fa-pencil" %>
               <%= link_to '', accessary, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"btn btn-danger btn-xs fa fa-trash-o" %>

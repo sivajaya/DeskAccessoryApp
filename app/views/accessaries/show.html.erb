@@ -10,17 +10,17 @@
     </div><br>
     <p>
       <label class="col-sm-2 col-sm-2 control-label emplbl">Employee </label>
-       <%= @accessary.employee_id %>
+      <%=Employee.find(@accessary.employee_id).name %>
     </p><br>
 
     <p>
       <label class="col-sm-2 col-sm-2 control-label emplbl">Moniter</label>
-      <%= @accessary.moniter_id %>
+      <%=Moniter.find(@accessary.moniter_id).screen %>
     </p><br>
 
     <p>
       <label class="col-sm-2 col-sm-2 control-label emplbl">System</label>
-      <%= @accessary.system_id %>
+      <%=System.find(@accessary.system_id).name %>
     </p><br>
 
     <p>
